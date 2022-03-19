@@ -34,29 +34,24 @@ namespace Assets.Scripts
             {
                 while (this.IsRunning)
                 {
-                    var mem = new MemoryStream();
-
-                    while (true)
+                    using (var mem = new MemoryStream())
                     {
-                        Debug.Log("Receiving...");
-
-                        var buf = new byte[this.packetSize];
-                        EndPoint ep = new IPEndPoint(IPAddress.Any, this.serverPort);
-                        this.server.ReceiveFrom(buf, ref ep);
-
-                        Debug.Log("Received!");
-
-                        try
+                        while (true)
                         {
-                            if (Encoding.Default.GetString(buf) == "FRAME END")
-                                break;
+                            var buf = new byte[this.packetSize];
+                            EndPoint ep = new IPEndPoint(IPAddress.Any, this.serverPort);
+                            this.server.ReceiveFrom(buf, ref ep);
+
+                            if (buf[0] == 'F')
+                                if (Encoding.Default.GetString(buf).Contains("FRAME END"))
+                                    break;
+
+                            mem.Write(buf, 0, buf.Length);
                         }
-                        catch { }
+                        Debug.Log("Received frame");
 
-                        mem.Write(buf, 0, buf.Length);
+                        this.ReceivedFrame.Invoke(mem.ToArray());
                     }
-
-                    this.ReceivedFrame.Invoke(mem.ToArray());
                 }
 
                 this.server.Close();
