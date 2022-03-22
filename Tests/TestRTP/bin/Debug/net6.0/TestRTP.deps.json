@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TestRTP/1.0.0": {
+        "dependencies": {
+          "FFMediaToolkit": "4.2.0",
+          "FFmpeg.AutoGen": "5.0.0"
+        },
+        "runtime": {
+          "TestRTP.dll": {}
+        }
+      },
+      "FFMediaToolkit/4.2.0": {
+        "dependencies": {
+          "FFmpeg.AutoGen": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FFMediaToolkit.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      },
+      "FFmpeg.AutoGen/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/FFmpeg.AutoGen.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestRTP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FFMediaToolkit/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-htPIrMrSCSEBcE+0XHmmbhcTQUqbgjTgk/tilp6Ah9NEBgc26yOKlOwfhKsQg4hU+1QxNSoekS0RPG3aRJCLug==",
+      "path": "ffmediatoolkit/4.2.0",
+      "hashPath": "ffmediatoolkit.4.2.0.nupkg.sha512"
+    },
+    "FFmpeg.AutoGen/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NOneQXI+BeZ295yDJ0Jv5m9TyP48Re4YUr6PIfi3q74ja6tZbWReMGFv0b3T420rtT37RvSBkipd940BFDJDgQ==",
+      "path": "ffmpeg.autogen/5.0.0",
+      "hashPath": "ffmpeg.autogen.5.0.0.nupkg.sha512"
+    }
+  }
+}
