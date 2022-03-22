@@ -5,5 +5,6 @@ c=IN IP4 192.168.1.242
 t=0 0
 a=tool:libavformat 58.45.100
 m=video 5000 RTP/AVP 96
+b=AS:200
 a=rtpmap:96 H264/90000
 a=fmtp:96 packetization-mode=1
