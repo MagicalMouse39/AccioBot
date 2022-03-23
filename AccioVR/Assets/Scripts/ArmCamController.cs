@@ -8,7 +8,7 @@ public class ArmCamController : MonoBehaviour
 {
     void Start()
     {
-        ViveMediaDecoder.loadVideoThumb(this.gameObject, @"E:\Scuola\Superiori\5° Anno\AccioBot\Tests\TestServer\info.sdp", 0);
+        ViveMediaDecoder.loadVideoThumb(this.gameObject, @"C:\Users\anton\Desktop\Coding\Unity\AccioBot\Tests\TestServer\info.sdp", 0);
     }
 
     void Update()
