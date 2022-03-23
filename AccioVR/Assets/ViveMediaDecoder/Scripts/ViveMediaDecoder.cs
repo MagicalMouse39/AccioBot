@@ -13,7 +13,7 @@ namespace HTC.UnityPlugin.Multimedia
 	[RequireComponent(typeof(MeshRenderer))]
 	public class ViveMediaDecoder : MonoBehaviour
 	{
-		private const string NATIVE_LIBRARY_NAME = @"E:\TMP\ViveMediaDecoder";
+		private const string NATIVE_LIBRARY_NAME = @"ViveMediaDecoder";
 
         //  Decoder
         [DllImport(NATIVE_LIBRARY_NAME)]
