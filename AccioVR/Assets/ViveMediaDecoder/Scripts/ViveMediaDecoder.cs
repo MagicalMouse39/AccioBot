@@ -419,7 +419,7 @@ namespace HTC.UnityPlugin.Multimedia
 		}
 
 		private void setTextures(Texture ytex, Texture utex, Texture vtex) {
-			Material texMaterial = GetComponent<MeshRenderer>().material;
+            Material texMaterial = RenderSettings.skybox; //GetComponent<MeshRenderer>().material;
 			texMaterial.SetTexture("_YTex", ytex);
 			texMaterial.SetTexture("_UTex", utex);
 			texMaterial.SetTexture("_VTex", vtex);
