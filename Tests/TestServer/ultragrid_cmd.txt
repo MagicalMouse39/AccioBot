@@ -1,0 +1,1 @@
+--capture-filter preview -t testcard -d gl:spout
