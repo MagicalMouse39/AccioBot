@@ -1,0 +1,69 @@
+
+UltraGrid installation instructions
+
+   Copyright (c) 2005-2018 CESNET z.s.p.o.
+   Copyright (c) 2013-2014 Fundació i2CAT, Internet I Innovació Digital a Catalunya
+   Copyright (c) 2001-2004 University of Southern California 
+   Copyright (c) 2003-2004 University of Glasgow
+   Copyright (c) 2003 University of Sydney
+   Copyright (c) 1993-2001 University College London
+   Copyright (c) 1996 Internet Software Consortium
+   Copyright (c) 1993 Regents of the University of California
+   Copyright (c) 1993 Eric Young
+   Copyright (c) 1992 Xerox Corporation
+   Copyright (c) 1991-1992 RSA Data Security, Inc.
+   Copyright (c) 1991 Massachusetts Institute of Technology
+   Copyright (c) 1991-1998 Free Software Foundation, Inc.
+   All rights reserved.
+
+   This software is distributed under license, see the file COPYRIGHT for
+   full terms and conditions.
+
+
+Software Prerequisites
+  Modules may have some addition dependencies not necessarily included in system:
+
+  * OpenGL display and OpenGL-based processors (RTDXT, scale, screen capture)
+        [ Linux only - this requirement do not apply to Mac OS X ] 
+        GLEW, GL libraries, freeglut (all including headers)
+        X11 libs and headers
+
+  * SDL [ Mac, Linux ]
+        SDL library and headers (for Mac preferably from MacPorts)
+        X11 libs and headers
+
+  * JACK related [ Mac, Linux ]
+        JACK library and headers (for Mac preferably from MacPorts)
+
+  * DVS[ Mac, Linux ]
+        DVS SDK
+
+  * SAGE [ Linux ]
+        SAGE installation, GL includes
+
+  * DELTACAST [ Linux ]
+        VideoMasterHD
+
+  * ALSA [ Linux ]
+        ALSA libs and headers
+
+  * Portaudio [ Linux, Mac ]
+        Portaudio libs and headers (for Mac preferably from MacPorts)
+
+  * JPEG [ Linux, Mac ]
+        CUDA Toolkit 4.1 or higher
+ 
+  Remaining modules shoudn't have additional dependencies (mainly Mac-related
+  ones).
+
+
+Installation instructions
+  UltraGrid is compiled with following commands:
+  $ ./autogen.sh
+  $ make
+  And optionally:
+  $ make install
+
+  For further installation instructions please visit the following web page:
+  https://github.com/CESNET/UltraGrid/wiki
+
