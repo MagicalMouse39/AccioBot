@@ -1,1 +1,3 @@
---capture-filter preview -t testcard -d gl:spout
+TESTCARD: 	./uv -t testcard -d gl:spout
+
+CAM: 		./uv -t dshow:mode=0:RGB:device=1 -d gl:spout
