@@ -1,0 +1,1 @@
+ffmpeg -re -i video_1920.mp4 -c:v libx264 -preset ultrafast -tune zerolatency -f rtsp rtsp://admin:admin@localhost:5000/cam
