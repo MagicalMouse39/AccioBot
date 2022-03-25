@@ -1,0 +1,1 @@
+Texture size: 1920x1080 -> 360 CAM Output Res
