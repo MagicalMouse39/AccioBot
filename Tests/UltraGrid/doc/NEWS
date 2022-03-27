@@ -1,3 +1,18 @@
+next
+====
+
+* added Reed-Solomon for audio
+* added support for RPI4 hw. acceleration
+* added holepunching support for where both hosts are behind NAT
+* added experimental echo canceller support
+* testcard (audio) - file playback now respects bps from --audio-capture-format
+* converting sound samples to a lower bit depth now uses dithering
+* transcoding reflector - ports with same the compression now reuse compressed
+  frames instead of doing the same work
+* conference mode now automatically sends back video to all participants
+* audio filter 'delay' for delaying audio on sender
+* improve H.265 recovery from packet drops (enabled constrained-intra)
+
 1.7
 ====
 * DeckLink - capture supports signal bit-depth detection (8-bit capture is
